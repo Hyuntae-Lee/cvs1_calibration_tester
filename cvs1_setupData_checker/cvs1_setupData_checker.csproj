@@ -14,6 +14,8 @@
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <WarningLevel>4</WarningLevel>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -55,11 +57,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="CalibItem.xaml">
+    <Page Include="Views\CalibUiItem.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="CalibItemGraph.xaml">
+    <Page Include="Views\CalibUiGraph.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -71,11 +73,12 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="CalibItem.xaml.cs">
-      <DependentUpon>CalibItem.xaml</DependentUpon>
+    <Compile Include="Defs.cs" />
+    <Compile Include="Views\CalibUiItem.xaml.cs">
+      <DependentUpon>CalibUiItem.xaml</DependentUpon>
     </Compile>
-    <Compile Include="CalibItemGraph.xaml.cs">
-      <DependentUpon>CalibItemGraph.xaml</DependentUpon>
+    <Compile Include="Views\CalibUiGraph.xaml.cs">
+      <DependentUpon>CalibUiGraph.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -83,6 +86,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\CalibDataItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

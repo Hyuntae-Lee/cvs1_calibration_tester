@@ -8,6 +8,6 @@
         WindowState="Maximized"
         Title="MainWindow" d:DesignHeight="350" d:DesignWidth="525">
     <Grid>
-        <local:CalibItem x:Name="item" Width="800" Height="600" />
+        <local:CalibUiItem x:Name="item" Width="800" Height="600" />
     </Grid>
 </Window>

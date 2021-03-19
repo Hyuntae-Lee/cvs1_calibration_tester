@@ -1,4 +1,5 @@
-﻿using System;
+﻿using cvs1_setupData_checker.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,9 +19,11 @@ namespace cvs1_setupData_checker
     /// <summary>
     /// Interaction logic for CalibItemGraph.xaml
     /// </summary>
-    public partial class CalibItemGraph : UserControl
+    public partial class CalibUiGraph : UserControl
     {
-        public CalibItemGraph()
+        CalibDataItem Data { get; set;}
+
+        public CalibUiGraph()
         {
             InitializeComponent();
         }

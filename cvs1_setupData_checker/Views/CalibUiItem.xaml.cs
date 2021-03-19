@@ -1,8 +1,8 @@
-﻿using System;
+﻿using cvs1_setupData_checker.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -18,9 +18,11 @@ namespace cvs1_setupData_checker
     /// <summary>
     /// Interaction logic for CalibItem.xaml
     /// </summary>
-    public partial class CalibItem : UserControl
+    public partial class CalibUiItem : UserControl
     {
-        public CalibItem()
+        List<CalibDataItem> DataList { get; set; }
+
+        public CalibUiItem()
         {
             InitializeComponent();
         }
